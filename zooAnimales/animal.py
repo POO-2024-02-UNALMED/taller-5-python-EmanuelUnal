@@ -25,10 +25,22 @@ class Animal:
         rep = Reptil.cantidadReptiles()
         pez = Pez.cantidadPeces()
 
-        return f"Mamiferos: {mam}\nAves: {ave}\nReptiles: {rep}\nPeces: {pez}\nAnfibios: {anf}"
+        return f"Mamiferos : {mam}\nAves : {ave}\nReptiles : {rep}\nPeces : {pez}\nAnfibios : {anf}"
     
     def getNombre(self):
         return self._nombre
+    
+    def getEdad(self):
+        return self._edad
+    
+    def getHabitat(self):
+        return self._habitat
+    
+    def getGenero(self):
+        return self._genero
+    
+    def getZona(self):
+        return self._zona
     
     def __str__(self):
         from gestion.zona import Zona
