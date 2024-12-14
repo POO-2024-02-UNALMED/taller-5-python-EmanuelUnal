@@ -27,6 +27,9 @@ class Animal:
 
         return f"Mamiferos: {mam}\nAves: {ave}\nReptiles: {rep}\nPeces: {pez}\nAnfibios: {anf}"
     
+    def getNombre(self):
+        return self._nombre
+    
     def __str__(self):
         from gestion.zona import Zona
         if self._zona != None:
@@ -34,4 +37,12 @@ class Animal:
         else:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
         
+    def toString(self):
+        from gestion.zona import Zona
+        if self._zona != None:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()} en el {self._zona.getZoo().getNombre}"
+        else:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
+        
     
+

@@ -20,3 +20,6 @@ class Zoologico:
     def getNombre(self):
         return self._nombre
     
+    def getZona(self):
+        return self._zonas
+    
